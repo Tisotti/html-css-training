@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- шапка -->
+    <header>
+      <nav>
+        <!-- nav оборачивает главный блок ссылок. кнопки тудв не попадают -->
+        <a href=""> EDNA </a>
+        <ul>
+          <!-- Место которое будет ссылаться на нужный нам текст. Для того что бы создать ссылку-якорь нужно заключить 
+          слово или фразу в тег <a> и назначить ему идентификатор. Выглядит это так: <a href= «#1» >текст ссылки </a>; -->
+          <li><a href="#1">About</a></li>
+          <li><a href="#2">My approach</a></li>
+          <li><a href="#3">Services</a></li>
+          <li><a href="#4">Reviews</a></li>
+          <li><a href="#5">Request</a></li>
+          <li><a href="#6">Blog</a></li>
+
+          <!-- текст на который мы будем ссылаться при помощи ссылки созданной ранее. В -->
+          <!-- тег текста («a», «p», «h», «span» и т .д.) нужно поставить нужный нам -->
+          <!-- id. Выглядит это так: -->
+          <!-- <a id="«1»">нужный нам текст</a -->
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div>
+        <!-- герой -->
+        <section>
+          <img
+            src="./images/photo/herou.jpg"
+            alt="Edna Shindinde's portret"
+            width="407"
+          />
+          <h1>
+            I help high value <br />
+            woman manifest <br />
+            themselves <br />
+            through style.
+          </h1>
+          <!-- В CSS нет свойства, которая делает первую букву заглавной. Но можно выбрать первый символ текста через 
+псевдоэлемент :first-letter, и применить к нему свойство text-transform: uppercase. -->
+          <a href="«5">BOOK NOW</a>
+        </section>
+
+        <!-- about -->
+        <section>
+          <h2 id="1">ABOUT</h2>
+          <p>
+            Welcome, I’m Edna Shindinde, personal style advisor & wardrobe
+            editor. I help women embrace their value by teaching how to build a
+            staple wardrobe in line with their inner power and beauty. The
+            greatest flair of mine is to see talent and strength behind every
+            woman I meet. Whether you build a career, take care of a family, own
+            a business or enjoy life by your rules – you are a high-value woman.
+            You set a precedent & should own it proudly! My vision is for each
+            women to unblushingly celebrate her beauty, to be seen and respected
+            without doubting own looks. Styling is just one way to achieve that.
+            And I couldn’t ask for a better mission, as to guide you on this
+            journey.
+          </p>
+          <img
+            src="./images/photo/about.jpg"
+            alt="black and white photo of Edna Shindinde"
+            width="711"
+          />
+
+          <ul>
+            <li>
+              <a href="">SERVICES</a>
+            </li>
+            <li>
+              <a href="">TESTIMONIALS</a>
+            </li>
+            <li>
+              <a href="">BOOK</a>
+            </li>
+          </ul>
+        </section>
+
+        <!-- ценности -->
+        <section>
+          <h2>Valuation</h2>
+          <!-- скрыть в css -->
+          <h3>You are always enough.</h3>
+          <p>
+            Every part of a woman, her every role is equally important and
+            worthy to be seen. Not clothes but you are the starting point of a
+            style to remember. Let’s manifest that.
+          </p>
+        </section>
+
+        <!-- подход -->
+        <section>
+          <h2 id="2">MY APPROACH</h2>
+          <h3>
+            I invest TIme to <br />
+            know the woman in <br />
+            front of me.
+          </h3>
+          <p>
+            I am excited to hear about your story and life experiences that made
+            you who you are. Your personality is the foundaHon of a unique style
+            & I’m here to explore it.
+          </p>
+        </section>
+
+        <!-- сервисы -->
+        <section>
+          <h2 id="3">SERVICES</h2>
+
+          <!-- предусматреть что элементы могут в будущем добавляться -->
+          <!-- пока сделала вторую страницу но скорее всего это 4 модалки и они сообщаются друг с другом якорями -->
+          <ul>
+            <li>
+              Guided Shopping
+              <a href="/services.html">
+                <img
+                  src="./images/photo/services_1.jpg"
+                  alt="purchase in paper bag"
+                  width="197"
+              /></a>
+            </li>
+            <li>
+              Style Session
+              <a href="/services.html">
+                <img
+                  src="./images/photo/services_2.jpg"
+                  alt="photo of Edna Shindinde"
+                  width="197"
+              /></a>
+            </li>
+            <li>
+              Wardrobe Edit
+              <a href="/services.html">
+                <img src="./images/photo/services_3.jpg" alt="look" width="197"
+              /></a>
+            </li>
+            <li>
+              Special Styling
+              <a href="/services.html">
+                <img
+                  src="./images/photo/services_4.jpg"
+                  alt="Edna works on a laptop"
+                  width="197"
+              /></a>
+            </li>
+          </ul>
+        </section>
+
+        <!-- отзывы -->
+        <section>
+          <h2 id="4">REVIEWS</h2>
+
+          <ul>
+            <li>
+              <h3>Nadiya Maltseva</h3>
+              <!-- возможно переименовать в п -->
+              <h4>Maltseva Consulting</h4>
+              <p>
+                During a stage in my life, I needed to transition from my
+                corporate attire during work hours and floral dresses during
+                leisure time...
+              </p>
+            </li>
+            <li>
+              <h3 lang="ru">Лемара Ахбаева</h3>
+              <!-- если во всем проекте стоит en lang а здесь не поставить lang ru то асист тех прочитает коряво -->
+              <h4>Make Up Artist & Beauty Expert</h4>
+              <p lang="ru">
+                Эдна, я выбрала работу с тобой, потому что ты внимательна к
+                деталям, очень хорошо чувствуешь...
+              </p>
+            </li>
+            <li>
+              <h3 lang="ru">Дарья Трофимова</h3>
+              <h4 lang="ru">Психотерапевт</h4>
+              <p lang="ru">
+                Хочу відзначити в тобі здатність показати та пояснити, що одяг —
+                не просто функціональна тканина...
+              </p>
+            </li>
+            <li>
+              <h3>Nadiya Maltseva</h3>
+              <h4>Maltseva Consulting</h4>
+              <p>
+                During a stage in my life, I needed to transition from my
+                corporate attire during work hours and floral dresses during
+                leisure time, to a more versatile and easy-to-wear style. Edna
+                surprised me by first wanting to understand me as a person, not
+                just my daily role. As we sorted through my closet, I was
+                apprehensive about having to let go of my favorite pieces.
+                However, Edna approached each item with reverence and asked
+                about my personal connection and association with it. In the
+                end, we ended up donating 70% of the items and did a little
+                shopping. Edna goes beyond just putting together an outfit. She
+                taught me to view each item as an ingredient that can be used in
+                various combinations, making them incredibly satisfying and
+                appealing, resulting in compliments from others
+              </p>
+            </li>
+          </ul>
+        </section>
+
+        <!-- форма записи -->
+        <section>
+          <h2 id="5">Request</h2>
+          <button>SEND A REQUEST</button>
+        </section>
+
+        <!-- блог -->
+        <section>
+          <h2 id="6">BLOG</h2>
+          <h3>
+            sustainable & <br />
+            mindful wardrobe
+          </h3>
+          <p>
+            Join my community & let’s explore meaningful topics of conscious
+            fashion and styling together.
+          </p>
+          <a href="id=6">explore more</a>
+        </section>
+      </div>
+    </main>
+
+    <!-- подвал -->
+    <footer>
+      <a href="">
+        <img src="./images/svg/logo.svg" alt="Company `s logo" />
+        <!-- change tag p -->
+      </a>
+      <p>© Copyright 2023</p>
+      <a href="https://www.instagram.com/">fashion styling</a>
+    </footer>
+  </body>
+</html>
