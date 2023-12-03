@@ -3,7 +3,14 @@
     --second-text-color: #8F7D65;
     --title-text-color: #B31719; 
     --background-color: #F6F5F1;
+    --button-secondary-color: #210803;
 }
+
+/* body {
+    font-family: Helvetica Neue, Arial, sans-serif;
+    font-family: 'Cormorant Garamond', serif;
+        font-family: 'Titan One', sans-serif;
+} */
 
 .page {
     background-color: var(--background-color);
@@ -15,15 +22,42 @@
     list-style: none;
 }
 
+/* лого
 .logo {
-    color: #210803;
-}
+    color: var(--button-secondary-color);
+} */
 
 .logo:hover,
 .logo:focus {
     color: var(--second-text-color);
 }
 
+/* кнопки */
+.button {
+color: var(--background-color);
+background-color: var(--title-text-color);
+
+font-size: 10px;
+display: inline-block;
+border: 1px solid var(--button-secondary-color);
+
+}
+
+.button.primary {
+    color: var(--background-color);
+background-color: var(--title-text-color);
+
+border-color: transparent;
+}
+
+.button.secondary {
+    color: var(--button-secondary-color);
+    background-color: var(--background-color);
+
+    border-color: var(--button-secondary-color);
+}
+
+/* навигация */
 .site-nav a {
     color: var(--second-text-color);
 }
@@ -33,9 +67,9 @@
      color: var(--primary-text-color);
 }
 
-.hero-link {
+/* .hero-link {
     color: var(--background-color);
-}
+} */
 
 .hero-link:hover,
 .hero-link:focus {
