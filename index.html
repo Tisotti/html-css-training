@@ -4,22 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body>
+  <body class="page">
     <!-- шапка -->
-    <header>
+    <header class="page-header">
       <nav>
         <!-- nav оборачивает главный блок ссылок. кнопки тудв не попадают -->
-        <a href=""> EDNA </a>
-        <ul>
+        <a href="./index.html" class="logo"> EDNA </a>
+        <ul class="site-nav list">
           <!-- Место которое будет ссылаться на нужный нам текст. Для того что бы создать ссылку-якорь нужно заключить 
           слово или фразу в тег <a> и назначить ему идентификатор. Выглядит это так: <a href= «#1» >текст ссылки </a>; -->
-          <li><a href="#1">About</a></li>
-          <li><a href="#2">My approach</a></li>
-          <li><a href="#3">Services</a></li>
-          <li><a href="#4">Reviews</a></li>
-          <li><a href="#5">Request</a></li>
-          <li><a href="#6">Blog</a></li>
+          <li><a class="site-nav-link" href="#1">About</a></li>
+          <li><a class="site-nav-link" href="#2">My approach</a></li>
+          <li><a class="site-nav-link" href="#3">Services</a></li>
+          <li><a class="site-nav-link" href="#4">Reviews</a></li>
+          <li><a class="site-nav-link" href="#5">Request</a></li>
+          <li><a class="site-nav-link" href="#6">Blog</a></li>
 
           <!-- текст на который мы будем ссылаться при помощи ссылки созданной ранее. В -->
           <!-- тег текста («a», «p», «h», «span» и т .д.) нужно поставить нужный нам -->
@@ -33,13 +34,13 @@
     <main>
       <div>
         <!-- герой -->
-        <section>
+        <section class="hero">
           <img
             src="./images/photo/herou.jpg"
             alt="Edna Shindinde's portret"
             width="407"
           />
-          <h1>
+          <h1 class="hero-title">
             I help high value <br />
             woman manifest <br />
             themselves <br />
@@ -47,12 +48,12 @@
           </h1>
           <!-- В CSS нет свойства, которая делает первую букву заглавной. Но можно выбрать первый символ текста через 
 псевдоэлемент :first-letter, и применить к нему свойство text-transform: uppercase. -->
-          <a href="«5">BOOK NOW</a>
+          <a href="«5" class="hero-link">BOOK NOW</a>
         </section>
 
         <!-- about -->
-        <section>
-          <h2 id="1">ABOUT</h2>
+        <section class="about">
+          <h2 id="1" class="subtitle">ABOUT</h2>
           <p>
             Welcome, I’m Edna Shindinde, personal style advisor & wardrobe
             editor. I help women embrace their value by teaching how to build a
@@ -72,15 +73,15 @@
             width="711"
           />
 
-          <ul>
+          <ul class="list">
             <li>
-              <a href="">SERVICES</a>
+              <a href="" class="about-link">SERVICES</a>
             </li>
             <li>
-              <a href="">TESTIMONIALS</a>
+              <a href="" class="about-link">TESTIMONIALS</a>
             </li>
             <li>
-              <a href="">BOOK</a>
+              <a href="" class="about-link">BOOK</a>
             </li>
           </ul>
         </section>
@@ -99,7 +100,7 @@
 
         <!-- подход -->
         <section>
-          <h2 id="2">MY APPROACH</h2>
+          <h2 id="2" class="subtitle">MY APPROACH</h2>
           <h3>
             I invest TIme to <br />
             know the woman in <br />
@@ -114,11 +115,11 @@
 
         <!-- сервисы -->
         <section>
-          <h2 id="3">SERVICES</h2>
+          <h2 id="3" class="subtitle">SERVICES</h2>
 
           <!-- предусматреть что элементы могут в будущем добавляться -->
           <!-- пока сделала вторую страницу но скорее всего это 4 модалки и они сообщаются друг с другом якорями -->
-          <ul>
+          <ul class="list">
             <li>
               Guided Shopping
               <a href="/services.html">
@@ -158,8 +159,9 @@
         <!-- отзывы -->
         <section>
           <h2 id="4">REVIEWS</h2>
+          <!-- скрыть в css👆🏻 -->
 
-          <ul>
+          <ul class="list">
             <li>
               <h3>Nadiya Maltseva</h3>
               <!-- возможно переименовать в п -->
@@ -212,12 +214,13 @@
         <!-- форма записи -->
         <section>
           <h2 id="5">Request</h2>
+          <!-- скрыть в css👆🏻 -->
           <button>SEND A REQUEST</button>
         </section>
 
         <!-- блог -->
         <section>
-          <h2 id="6">BLOG</h2>
+          <h2 id="6" class="subtitle">BLOG</h2>
           <h3>
             sustainable & <br />
             mindful wardrobe

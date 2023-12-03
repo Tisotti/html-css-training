@@ -1,0 +1,52 @@
+:root {
+    --primary-text-color: #2D1B0D;
+    --second-text-color: #8F7D65;
+    --title-text-color: #B31719; 
+    --background-color: #F6F5F1;
+}
+
+.page {
+    background-color: var(--background-color);
+    color: var(--primary-text-color);
+}
+
+/* сброс стилей в ссылках */
+.list {
+    list-style: none;
+}
+
+.logo {
+    color: #210803;
+}
+
+.logo:hover,
+.logo:focus {
+    color: var(--second-text-color);
+}
+
+.site-nav a {
+    color: var(--second-text-color);
+}
+
+.site-nav-link:hover,
+.site-nav-link:focus {
+     color: var(--primary-text-color);
+}
+
+.hero-link {
+    color: var(--background-color);
+}
+
+.hero-link:hover,
+.hero-link:focus {
+    color: #210803;
+}
+
+.subtitle {
+    color: var(--title-text-color)
+}
+
+/* about */
+.about-link {
+    color: var(--second-text-color);
+}
