@@ -73,25 +73,27 @@ body {
     display: inline-block;
 
     padding: 16px 72px;
+
+    min-width: 197px;
+
+    align-items: center;
 }
 
-.button.primary:hover, .button.primary:focus {
-    background-color: #530c0e;
-    color: var(--background-color);
-}
 
-.button.secondary:hover, .button.secondary:focus {
-    color: var(--background-color);
-        background-color: var(--title-text-color);
-}
+
+
 
 .button.primary {
     color: var(--background-color);
     background-color: var(--title-text-color);
 
     border-color: transparent;
+}
 
-    text-decoration: none;
+.button.primary:hover,
+.button.primary:focus {
+    background-color: #530c0e;
+    color: var(--background-color);
 }
 
 .button.secondary {
@@ -99,8 +101,12 @@ body {
     background-color: var(--background-color);
 
     border-color: var(--button-secondary-color);
+}
 
-    text-decoration: none;
+.button.secondary:hover,
+.button.secondary:focus {
+    color: var(--background-color);
+    background-color: var(--title-text-color);
 }
 
 /* навигация */
