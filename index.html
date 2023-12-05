@@ -14,37 +14,43 @@
       href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Titan+One&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css "
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body class="page">
     <!-- шапка -->
     <header class="page-header">
-      <nav>
-        <!-- nav оборачивает главный блок ссылок. кнопки тудв не попадают -->
-        <a href="./index.html" class="logo">
-          <img src="./images/logo/logo.svg" alt="logo EDNA" />
-        </a>
-        <ul class="site-nav list">
-          <!-- Место которое будет ссылаться на нужный нам текст. Для того что бы создать ссылку-якорь нужно заключить 
+      <div class="container">
+        <nav>
+          <!-- nav оборачивает главный блок ссылок. кнопки тудв не попадают -->
+          <a href="./index.html" class="logo">
+            <img src="./images/logo/logo.svg" alt="logo EDNA" />
+          </a>
+          <ul class="site-nav list">
+            <!-- Место которое будет ссылаться на нужный нам текст. Для того что бы создать ссылку-якорь нужно заключить 
           слово или фразу в тег <a> и назначить ему идентификатор. Выглядит это так: <a href= «#1» >текст ссылки </a>; -->
-          <li><a class="site-nav-link" href="#1">About</a></li>
-          <li><a class="site-nav-link" href="#2">My approach</a></li>
-          <li><a class="site-nav-link" href="#3">Services</a></li>
-          <li><a class="site-nav-link" href="#4">Reviews</a></li>
-          <li><a class="site-nav-link" href="#5">Request</a></li>
-          <li><a class="site-nav-link" href="#6">Blog</a></li>
+            <li><a class="site-nav-link" href="#1">About</a></li>
+            <li><a class="site-nav-link" href="#2">My approach</a></li>
+            <li><a class="site-nav-link" href="#3">Services</a></li>
+            <li><a class="site-nav-link" href="#4">Reviews</a></li>
+            <li><a class="site-nav-link" href="#5">Request</a></li>
+            <li><a class="site-nav-link" href="#6">Blog</a></li>
 
-          <!-- текст на который мы будем ссылаться при помощи ссылки созданной ранее. В -->
-          <!-- тег текста («a», «p», «h», «span» и т .д.) нужно поставить нужный нам -->
-          <!-- id. Выглядит это так: -->
-          <!-- <a id="«1»">нужный нам текст</a -->
-        </ul>
-      </nav>
+            <!-- текст на который мы будем ссылаться при помощи ссылки созданной ранее. В -->
+            <!-- тег текста («a», «p», «h», «span» и т .д.) нужно поставить нужный нам -->
+            <!-- id. Выглядит это так: -->
+            <!-- <a id="«1»">нужный нам текст</a -->
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <!-- main -->
     <main>
-      <div>
+      <div class="container">
         <!-- герой -->
         <section class="hero">
           <img
@@ -277,16 +283,18 @@
 
     <!-- подвал -->
     <footer>
-      <a href="">
-        <img src="./images/svg/logo.svg" alt="Company `s logo" />
-      </a>
-      <!-- change tag p 👇🏼-->
-      <p>&copy; Copyright 2023</p>
-      <!-- симмвольные подстановки ☝️ з2 1час22 реп -->
-      <!-- про aria-lable з2 1час14 мин👇🏼 реп -->
-      <a href="https://www.instagram.com/" aria-label="instagram link"
-        >fashion styling</a
-      >
+      <div class="container">
+        <a href="">
+          <img src="./images/svg/logo.svg" alt="Company `s logo" />
+        </a>
+        <!-- change tag p 👇🏼-->
+        <p>&copy; Copyright 2023</p>
+        <!-- симмвольные подстановки ☝️ з2 1час22 реп -->
+        <!-- про aria-lable з2 1час14 мин👇🏼 реп -->
+        <a href="https://www.instagram.com/" aria-label="instagram link"
+          >fashion styling</a
+        >
+      </div>
     </footer>
   </body>
 </html>
