@@ -50,10 +50,11 @@
 
     <!-- main -->
     <main>
-      <div class="container">
+     
         <!-- герой -->
         <section class="hero">
-          <img
+           <div class="container">
+ <img
             src="./images/photo/herou.jpg"
             alt="Edna Shindinde's portret"
             width="407"
@@ -67,11 +68,14 @@
           <!-- В CSS нет свойства, которая делает первую букву заглавной. Но можно выбрать первый символ текста через 
 псевдоэлемент :first-letter, и применить к нему свойство text-transform: uppercase. -->
           <a href="#5" class="hero-link button primary">BOOK NOW</a>
+           </div>
+         
         </section>
 
         <!-- about -->
         <section class="about">
-          <h2 id="1" class="subtitle">ABOUT</h2>
+          <div class="container container-about">
+   <h2 id="1" class="subtitle">ABOUT</h2>
           <p class="about-text">
             Welcome, I’m Edna Shindinde, personal style advisor & wardrobe
             editor. I help women embrace their value by teaching how to build a
@@ -85,11 +89,7 @@
             And I couldn’t ask for a better mission, as to guide you on this
             journey.
           </p>
-          <img
-            src="./images/photo/about.jpg"
-            alt="black and white photo of Edna Shindinde"
-            width="711"
-          />
+          
 
           <ul class="list">
             <li>
@@ -102,38 +102,55 @@
               <a href="" class="about-link">book</a>
             </li>
           </ul>
+          <img
+            src="./images/photo/about.jpg"
+            alt="black and white photo of Edna Shindinde"
+            width="711"
+          />
+          </div>
+       
         </section>
 
         <!-- ценности -->
         <section class="valuation">
-          <h2>Valuation</h2>
+          <div class="container container-valuation">
+            <h2>Valuation</h2>
           <!-- скрыть в css -->
+          <img src="./images/photo/section_3:1.jpg" alt="reading a book" width="456">
           <h3 class="valuation-subtitle">You are always enough.</h3>
           <p class="valuation-text">
             Every part of a woman, her every role is equally important and
             worthy to be seen. Not clothes but you are the starting point of a
             style to remember. Let’s manifest that.
           </p>
+          <img src="./images/photo/section_3:2.jpg" alt="bracelets on the hand" width="310">
+          </div>
+          
         </section>
 
         <!-- подход -->
         <section class="approach">
-          <h2 id="2" class="subtitle">MY APPROACH</h2>
+          <div class="container container-approach">
+<h2 id="2" class="subtitle">MY APPROACH</h2>
           <h3 class="approach-subtitle">
             I invest TIme to <br />
             know the woman in <br />
             front of me.
           </h3>
-          <p>
+          <p class="approach-text">
             I am excited to hear about your story and life experiences that made
             you who you are. Your personality is the foundaHon of a unique style
             & I’m here to explore it.
           </p>
+          <img src="./images/photo/my aproach.jpg" alt="Edna puts on earrings" width="456">
+          </div>
+          
         </section>
 
         <!-- сервисы -->
         <section class="servises">
-          <h2 id="3" class="subtitle">SERVICES</h2>
+          <div class="container container-servises">
+            <h2 id="3" class="subtitle subtitle-servises">SERVICES</h2>
 
           <!-- предусматреть что элементы могут в будущем добавляться -->
           <!-- пока сделала вторую страницу но скорее всего это 4 модалки и они сообщаются друг с другом якорями -->
@@ -175,11 +192,14 @@
               >
             </li>
           </ul>
+          </div>
+          
         </section>
 
         <!-- отзывы -->
         <section class="reviews">
-          <h2 id="4">REVIEWS</h2>
+          <div class="container container-reviews">
+             <h2 id="4">REVIEWS</h2>
           <!-- скрыть в css👆🏻 -->
 
           <ul class="list">
@@ -254,19 +274,31 @@
               </p>
             </li>
           </ul>
+          </div>
+         
         </section>
 
         <!-- форма записи -->
-        <section>
-          <h2 id="5">Request</h2>
+        <section class="request"> 
+          <div class="container">
+<h2 id="5">Request</h2>
           <!-- скрыть в css👆🏻 -->
-
+<img src="./images/photo/request.jpg" alt="gold earring ring in ear" width="412">
           <a href="" class="button primary">SEND A REQUEST</a>
+          </div>
+          
         </section>
 
         <!-- блог -->
         <section class="blog">
-          <h2 id="6" class="subtitle">BLOG</h2>
+          <div class="container container-blog">
+             <h2 id="6" class="subtitle subtitle-blog">BLOG</h2>
+             <img src="./images/photo/blog_1.jpg" alt="girl in beige overalls" width="210">
+              <img src="./images/photo/blog_2.jpg" alt="dark green knitwear" width="210">
+               <img src="./images/photo/blog_3.jpg" alt="girl in a beige sweater" width="210">
+                <img src="./images/photo/blog_4.jpg" alt="girl sitting in a dark suit" width="210">
+                 <img src="./images/photo/blog_5.jpg" alt="shirt and jacket on a girl" width="210">
+                  <img src="./images/photo/blog_6.jpg" alt="orange leather heeled sandals" width="210">
           <h3 class="blog-title">
             sustainable & <br />
             mindful wardrobe
@@ -276,14 +308,22 @@
             fashion and styling together.
           </p>
           <a href="id=6" class="button secondary">explore more</a>
-          <!-- скорее всего это кнопка ☝️-->
+             <!-- скорее всего это кнопка ☝️-->
+          </div>
+         
+       
         </section>
       </div>
+
+      <!-- прокрутка вверх -->
+      <section class="back-top">
+        <div class="container container-backtop"></div>
+      </section>
     </main>
 
     <!-- подвал -->
     <footer>
-      <div class="container">
+      <div class="container container-footer">
         <a href="">
           <img src="./images/svg/logo.svg" alt="Company `s logo" />
         </a>
@@ -294,7 +334,7 @@
         <a href="https://www.instagram.com/" aria-label="instagram link"
           >fashion styling</a
         >
-      </div>
+  
     </footer>
   </body>
 </html>

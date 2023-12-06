@@ -33,8 +33,8 @@ body {
 
 .container {
     width: 1300px;
-    padding-left: 10px;
-    padding-right: 10px;
+    /* padding-left: 10px;
+    padding-right: 10px; */
     margin-left: auto;
     margin-right: auto;
 
@@ -43,6 +43,8 @@ body {
 
 /* сброс стилей в ссылках */
 .list {
+    padding: 0;
+    margin: 0;
     list-style: none;
 }
 
@@ -79,10 +81,6 @@ body {
     align-items: center;
 }
 
-
-
-
-
 .button.primary {
     color: var(--background-color);
     background-color: var(--title-text-color);
@@ -112,6 +110,8 @@ body {
 /* навигация */
 .site-nav a {
     color: var(--second-text-color);
+
+    
 }
 
 .site-nav-link {
@@ -125,6 +125,9 @@ body {
 
 /* заголовки секций */
 .subtitle {
+
+    margin-top: 0;
+    margin-bottom: 0;
 
     color: var(--title-text-color);
 
@@ -142,6 +145,7 @@ body {
 }
 
 .hero-title, .approach-subtitle, .blog-title {
+
     font-family: Cormorant Garamond;
     font-weight: 300;
     
@@ -149,13 +153,22 @@ body {
     line-height: 1.03;
 
     text-transform: uppercase;
+
+    margin-top: 0;
+    margin-bottom: 80px;
 }
 
 /* .hero-link {
     text-decoration: none;
 } */
 
+
+
 /* about */
+.container-about {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
 .about-link {
     color: var(--second-text-color);
 
@@ -164,8 +177,22 @@ text-decoration-line: underline;
 text-transform: uppercase;
 }
 
+.about-text {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+
 /* valuation */
+.container-valuation {
+    padding-top: 80px;
+        padding-bottom: 80px;
+}
 .valuation-subtitle {
+    margin-top: 0;
+    margin-bottom: 0;
+
     font-family: Cormorant Garamond;
     font-weight: 300;
 
@@ -175,7 +202,41 @@ text-transform: uppercase;
     text-transform: uppercase;
 }
 
+.valuation-text {
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+
+
+/* approach */
+.container-approach {
+    padding-top: 160px;
+    padding-bottom: 160px;
+}
+
+.approach-subtitle {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.approach-text {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+
+
 /* servises */
+.container-servises {
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.subtitle-servises {
+margin-bottom: 80px;
+}
+
 .servises-link {
     color: var(--button-secondary-color);
 
@@ -184,9 +245,17 @@ text-transform: uppercase;
 
     text-transform: uppercase;
     text-decoration: none;
+
+    display: inline-block;
 }
 
+
+
 /* reviews */
+.container-reviews {
+    padding-top: 160px;
+    padding-bottom: 160px;
+}
 .reviews-name{
     color: var(--button-secondary-color);
 
@@ -207,10 +276,36 @@ text-transform: uppercase;
 .reviews-text {
     color: var(--second-text-color);
   
-        font-size: 10px;
+    font-size: 10px;
 
-        line-height: 1.3;
+    line-height: 1.3;
 
-        letter-spacing: 0.2px;
+    letter-spacing: 0.2px;
 }
 
+
+
+/* blog */
+.container-blog {
+    padding-top: 85px;
+}
+
+.subtitle-blog {
+    margin-bottom: 79px;
+}
+
+
+
+
+/* back-top */
+.container-backtop{
+    padding-top: 80px;
+}
+
+
+
+/* footer */
+.container-footer {
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
