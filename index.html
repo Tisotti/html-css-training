@@ -23,8 +23,8 @@
   <body class="page">
     <!-- шапка -->
     <header class="page-header">
-      <div class="container">
-        <nav>
+      <div class="container header-container">
+        <nav class="main-nav">
           <!-- nav оборачивает главный блок ссылок. кнопки тудв не попадают -->
           <a href="./index.html" class="logo">
             <img src="./images/logo/logo.svg" alt="logo EDNA" />
@@ -32,12 +32,12 @@
           <ul class="site-nav list">
             <!-- Место которое будет ссылаться на нужный нам текст. Для того что бы создать ссылку-якорь нужно заключить 
           слово или фразу в тег <a> и назначить ему идентификатор. Выглядит это так: <a href= «#1» >текст ссылки </a>; -->
-            <li><a class="site-nav-link" href="#1">About</a></li>
-            <li><a class="site-nav-link" href="#2">My approach</a></li>
-            <li><a class="site-nav-link" href="#3">Services</a></li>
-            <li><a class="site-nav-link" href="#4">Reviews</a></li>
-            <li><a class="site-nav-link" href="#5">Request</a></li>
-            <li><a class="site-nav-link" href="#6">Blog</a></li>
+            <li class="site-nav-item"><a class="site-nav-link" href="#1">About</a></li>
+            <li class="site-nav-item"><a class="site-nav-link" href="#2">My approach</a></li>
+            <li class="site-nav-item"><a class="site-nav-link" href="#3">Services</a></li>
+            <li class="site-nav-item"><a class="site-nav-link" href="#4">Reviews</a></li>
+            <li class="site-nav-item"><a class="site-nav-link" href="#5">Request</a></li>
+            <li class="site-nav-item"><a class="site-nav-link" href="#6">Blog</a></li>
 
             <!-- текст на который мы будем ссылаться при помощи ссылки созданной ранее. В -->
             <!-- тег текста («a», «p», «h», «span» и т .д.) нужно поставить нужный нам -->
@@ -53,21 +53,22 @@
      
         <!-- герой -->
         <section class="hero">
-           <div class="container">
- <img
+           <div class="container hero-container">
+           <img
             src="./images/photo/herou.jpg"
             alt="Edna Shindinde's portret"
             width="407"
-          />
-          <h1 class="hero-title">
-            I help high value <br />
-            woman manifest <br />
-            themselves <br />
-            through style.
+            class="hero-img"
+           />
+          <div class="div-titel">
+            <h1 class="hero-title">
+            I help high value woman manifest themselves through style.
           </h1>
           <!-- В CSS нет свойства, которая делает первую букву заглавной. Но можно выбрать первый символ текста через 
 псевдоэлемент :first-letter, и применить к нему свойство text-transform: uppercase. -->
           <a href="#5" class="hero-link button primary">BOOK NOW</a>
+          </div>
+          
            </div>
          
         </section>
@@ -75,7 +76,8 @@
         <!-- about -->
         <section class="about">
           <div class="container container-about">
-   <h2 id="1" class="subtitle">ABOUT</h2>
+            <div class="about-wrapper">
+               <h2 id="1" class="subtitle about-subtitel">ABOUT</h2>
           <p class="about-text">
             Welcome, I’m Edna Shindinde, personal style advisor & wardrobe
             editor. I help women embrace their value by teaching how to build a
@@ -89,24 +91,29 @@
             And I couldn’t ask for a better mission, as to guide you on this
             journey.
           </p>
-          
-
-          <ul class="list">
-            <li>
+          <ul class="list about-list">
+            <li class="about-item">
               <a href="" class="about-link">services</a>
             </li>
-            <li>
+            <li class="about-item">
               <a href="" class="about-link">testimonials</a>
             </li>
-            <li>
+            <li class="about-item">
               <a href="" class="about-link">book</a>
             </li>
           </ul>
-          <img
+            </div>
+         
+      
+          <div class="about-img">
+              <img
             src="./images/photo/about.jpg"
             alt="black and white photo of Edna Shindinde"
             width="711"
           />
+          <!-- что бы убрать зазор у картинки - дисплэй блок -->
+          </div>
+        
           </div>
        
         </section>
@@ -116,14 +123,14 @@
           <div class="container container-valuation">
             <h2>Valuation</h2>
           <!-- скрыть в css -->
-          <img src="./images/photo/section_3:1.jpg" alt="reading a book" width="456">
+          <img src="./images/photo/section_3:1.jpg" alt="reading a book" width="456" class="valuation-img">
           <h3 class="valuation-subtitle">You are always enough.</h3>
           <p class="valuation-text">
             Every part of a woman, her every role is equally important and
             worthy to be seen. Not clothes but you are the starting point of a
             style to remember. Let’s manifest that.
           </p>
-          <img src="./images/photo/section_3:2.jpg" alt="bracelets on the hand" width="310">
+          <img src="./images/photo/section_3:2.jpg" alt="bracelets on the hand" width="310" height="424">
           </div>
           
         </section>
@@ -131,17 +138,19 @@
         <!-- подход -->
         <section class="approach">
           <div class="container container-approach">
-<h2 id="2" class="subtitle">MY APPROACH</h2>
+            <div class="approach-wrapper">
+   <h2 id="2" class="subtitle approach-titel">MY APPROACH</h2>
           <h3 class="approach-subtitle">
-            I invest TIme to <br />
-            know the woman in <br />
-            front of me.
+            I invest TIme to know the woman in front of me.
           </h3>
           <p class="approach-text">
             I am excited to hear about your story and life experiences that made
             you who you are. Your personality is the foundaHon of a unique style
             & I’m here to explore it.
           </p>
+            </div>
+       
+
           <img src="./images/photo/my aproach.jpg" alt="Edna puts on earrings" width="456">
           </div>
           
@@ -154,8 +163,9 @@
 
           <!-- предусматреть что элементы могут в будущем добавляться -->
           <!-- пока сделала вторую страницу но скорее всего это 4 модалки и они сообщаются друг с другом якорями -->
-          <ul class="list">
-            <li>
+          <div class="serv-list">
+<ul class="list servises-list">
+            <li class="servises-item">
               <a href="/services.html" class="servises-link">
                 <img
                   src="./images/photo/services_1.jpg"
@@ -164,7 +174,7 @@
                 />Guided Shopping</a
               >
             </li>
-            <li>
+            <li class="servises-item">
               <a href="/services.html" class="servises-link">
                 <img
                   src="./images/photo/services_2.jpg"
@@ -173,7 +183,7 @@
                 />Style Session</a
               >
             </li>
-            <li>
+            <li class="servises-item">
               <a href="/services.html" class="servises-link">
                 <img
                   src="./images/photo/services_3.jpg"
@@ -182,7 +192,7 @@
                 />Wardrobe Edit</a
               >
             </li>
-            <li>
+            <li class="servises-item">
               <a href="/services.html" class="servises-link">
                 <img
                   src="./images/photo/services_4.jpg"
@@ -194,6 +204,8 @@
           </ul>
           </div>
           
+          </div>
+          
         </section>
 
         <!-- отзывы -->
@@ -202,8 +214,8 @@
              <h2 id="4">REVIEWS</h2>
           <!-- скрыть в css👆🏻 -->
 
-          <ul class="list">
-            <li>
+          <ul class="list reviews-list">
+            <li class="reviews-item">
               <img
                 src="./images/photo/rewies_1.png"
                 alt="photo Nadiya Maltseva"
@@ -219,7 +231,7 @@
                 leisure time...
               </p>
             </li>
-            <li>
+            <li class="reviews-item">
               <img
                 src="./images/photo/rewies_2.png"
                 alt="photo Lemara Ahbaeva"
@@ -234,7 +246,7 @@
                 деталям, очень хорошо чувствуешь...
               </p>
             </li>
-            <li>
+            <li class="reviews-item">
               <img
                 src="./images/photo/rewies_3.png"
                 alt="photo Datia Trofimova"
@@ -248,7 +260,7 @@
                 не просто функціональна тканина...
               </p>
             </li>
-            <li>
+            <li class="reviews-item">
               <img
                 src="./images/photo/rewies_4.png"
                 alt="photo Nadiya Maltseva"
@@ -257,7 +269,8 @@
               />
               <h3 class="reviews-name">Nadiya Maltseva</h3>
               <h4 class="reviews-job">Maltseva Consulting</h4>
-              <p class="reviews-text">
+            </li>
+            <li class="reviews-item"> <p class="reviews-text-last">
                 During a stage in my life, I needed to transition from my
                 corporate attire during work hours and floral dresses during
                 leisure time, to a more versatile and easy-to-wear style. Edna
@@ -271,8 +284,7 @@
                 taught me to view each item as an ingredient that can be used in
                 various combinations, making them incredibly satisfying and
                 appealing, resulting in compliments from others
-              </p>
-            </li>
+              </p></li>
           </ul>
           </div>
          
@@ -293,13 +305,18 @@
         <section class="blog">
           <div class="container container-blog">
              <h2 id="6" class="subtitle subtitle-blog">BLOG</h2>
-             <img src="./images/photo/blog_1.jpg" alt="girl in beige overalls" width="210">
+             <div class="blog-wrapper">
+               <div class="blog-galery">
+              <img src="./images/photo/blog_1.jpg" alt="girl in beige overalls" width="210">
               <img src="./images/photo/blog_2.jpg" alt="dark green knitwear" width="210">
                <img src="./images/photo/blog_3.jpg" alt="girl in a beige sweater" width="210">
                 <img src="./images/photo/blog_4.jpg" alt="girl sitting in a dark suit" width="210">
                  <img src="./images/photo/blog_5.jpg" alt="shirt and jacket on a girl" width="210">
                   <img src="./images/photo/blog_6.jpg" alt="orange leather heeled sandals" width="210">
-          <h3 class="blog-title">
+             </div>
+          
+             <div class="blog-content">
+               <h3 class="blog-title">
             sustainable & <br />
             mindful wardrobe
           </h3>
@@ -309,6 +326,10 @@
           </p>
           <a href="id=6" class="button secondary">explore more</a>
              <!-- скорее всего это кнопка ☝️-->
+             </div>
+         
+             </div>
+            
           </div>
          
        
