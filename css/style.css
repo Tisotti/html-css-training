@@ -31,7 +31,7 @@ body {
 
 img {
     display: block;
-    max-width: 100%;
+    /* max-width: 100%; */
 }
 
 .container {
@@ -371,12 +371,13 @@ margin-bottom: 80px;
 
 .serv-list {
     display: flex;
-    justify-content: end;
+    /* justify-content: end; */
 }
 
 .servises-list {
     display: flex;
     width: 848px;
+    margin-left: auto;
     /* align-items: flex-end; */ 
 }
 
