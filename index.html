@@ -22,7 +22,7 @@
   </head>
   <body class="page">
     <!-- шапка -->
-    <header class="page-header">
+    <header class="page-header" id="pg-header">
       <div class="container header-container">
         <nav class="main-nav">
           <!-- nav оборачивает главный блок ссылок. кнопки тудв не попадают -->
@@ -44,7 +44,19 @@
             <!-- id. Выглядит это так: -->
             <!-- <a id="«1»">нужный нам текст</a -->
           </ul>
+
+           <button class="nav-menu">
+          <svg class="nav-menu-logo" width="24" height="24">
+             <use href="./images/svg/symbol-defs.svg#menu"></use>
+          </svg>
+        </button>
+        <!-- <a href="">
+          <svg class="nav-menu-logo" width="24" height="24">
+             <use href="./images/svg/symbol-defs.svg#menu"></use>
+          </svg>
+        </a> -->
         </nav>
+       
       </div>
     </header>
 
@@ -121,38 +133,63 @@
         <!-- ценности -->
         <section class="valuation">
           <div class="container container-valuation">
-            <h2>Valuation</h2>
-          <!-- скрыть в css -->
-          <img src="./images/photo/section_3_1.jpg" alt="reading a book" width="456" class="valuation-img">
-          <h3 class="valuation-subtitle">You are always enough.</h3>
-          <p class="valuation-text">
-            Every part of a woman, her every role is equally important and
-            worthy to be seen. Not clothes but you are the starting point of a
-            style to remember. Let’s manifest that.
-          </p>
-          <img src="./images/photo/section_3_2.jpg" alt="bracelets on the hand" width="310" height="424">
-          </div>
-          
+           
+            <div class="valuation-book">
+              <h2>Valuation</h2>
+              <!-- скрыть в css -->
+              <div class="valuation-position">
+                 <div class="valuation-img">
+                 <img src="./images/photo/section_3_1.jpg" alt="reading a book" width="456" >
+              </div>
+               
+                
+                <div class="valuation-text-wrapper">
+                  <h3 class="valuation-subtitle">You are always enough.</h3>
+                    <p class="valuation-text">
+                     Every part of a woman, her every role is equally important and
+                     worthy to be seen. Not clothes but you are the starting point of a
+                     style to remember. Let’s manifest that.
+                    </p>
+                </div>
+                
+              </div>
+             
+            </div>
+           
+            <img src="./images/photo/section_3_2.jpg" alt="bracelets on the hand" width="310" height="424">
+         
+          </div>  
         </section>
 
         <!-- подход -->
         <section class="approach">
           <div class="container container-approach">
             <div class="approach-wrapper">
-   <h2 id="2" class="subtitle approach-titel">MY APPROACH</h2>
-          <h3 class="approach-subtitle">
-            I invest TIme to know the woman in front of me.
-          </h3>
-          <p class="approach-text">
-            I am excited to hear about your story and life experiences that made
-            you who you are. Your personality is the foundaHon of a unique style
-            & I’m here to explore it.
-          </p>
+             <h2 id="2" class="subtitle approach-titel">MY APPROACH</h2>
+               <h3 class="approach-subtitle">
+                   I invest TIme to know the woman in front of me.
+               </h3>
+                 <div class="approach-arrows-wrap">
+                   <p class="approach-text">
+                   I am excited to hear about your story and life experiences that made
+                   you who you are. Your personality is the foundaHon of a unique style
+                   & I’m here to explore it.
+                 </p>
+                 <a class="approach-arrows" href="#">
+                   <svg class="approach-arrow-L" width="40" height="9">
+                     <use href="./images/svg/symbol-defs.svg#Arrow-L"></use>
+                   </svg>
+                 </a>
+                  <a class="approach-arrows"  href="#">
+                   <svg class="approach-arrow-R" width="40" height="9">
+                     <use href="./images/svg/symbol-defs.svg#Arrow-R"></use>
+                   </svg>
+                 </a>
+                 </div>
+                
             </div>
-       
-
-          <img src="./images/photo/my aproach.jpg" alt="Edna puts on earrings" width="456">
-          </div>
+                   <img src="./images/photo/my aproach.jpg" alt="Edna puts on earrings" width="456">
+           </div>
           
         </section>
 
@@ -314,7 +351,7 @@
                <div class="blog-galery">
               <img src="./images/photo/blog_1.jpg" alt="girl in beige overalls" width="210">
               <img src="./images/photo/blog_2.jpg" alt="dark green knitwear" width="210">
-               <img src="./images/photo/blog_3.jpg" alt="girl in a beige sweater" width="210">
+              <img src="./images/photo/blog_3.jpg" alt="girl in a beige sweater" width="210">
                 <img src="./images/photo/blog_4.jpg" alt="girl sitting in a dark suit" width="210">
                  <img src="./images/photo/blog_5.jpg" alt="shirt and jacket on a girl" width="210">
                   <img src="./images/photo/blog_6.jpg" alt="orange leather heeled sandals" width="210">
@@ -322,14 +359,17 @@
           
              <div class="blog-content">
                <h3 class="blog-title">
-            sustainable & <br />
-            mindful wardrobe
-          </h3>
-          <p>
+                 sustainable & <br />
+                 mindful wardrobe
+               </h3>
+        <div class="blog-text-wrapper">
+   <p class="blog-text">
             Join my community & let’s explore meaningful topics of conscious
             fashion and styling together.
           </p>
           <a href="id=6" class="button secondary">explore more</a>
+        </div>
+       
              <!-- скорее всего это кнопка ☝️-->
              </div>
          
@@ -343,24 +383,40 @@
 
       <!-- прокрутка вверх -->
       <section class="back-top">
-        <div class="container container-backtop"></div>
+        <div class="container container-backtop">
+          <a class="backtop-arrow" href="#pg-header">
+            <svg class="backtop-icon" width="16" height="16">
+              <use href="./images/svg/symbol-defs.svg#Arrow-ap"></use>
+            </svg>
+          </a>
+        </div>
       </section>
     </main>
 
     <!-- подвал -->
     <footer>
       <div class="container container-footer">
-        <a href="">
-          <img src="./images/svg/logo.svg" alt="Company `s logo" />
+    
+        <a class="footer-logo" href="">
+           <svg class="footer-icon" width="79" height="9">
+              <use href="./images/svg/symbol-defs.svg#logo"></use>
+            </svg>
+          <!-- <img src="./images/svg/logo.svg" alt="Company `s logo" /> -->
         </a>
         <!-- change tag p 👇🏼-->
-        <p>&copy; Copyright 2023</p>
+        <p class="footer-copyright">&copy; Copyright 2023</p>
         <!-- симмвольные подстановки ☝️ з2 1час22 реп -->
         <!-- про aria-lable з2 1час14 мин👇🏼 реп -->
-        <a href="https://www.instagram.com/" aria-label="instagram link"
-          >fashion styling</a
+        <a class="footer-social" href="https://www.instagram.com/" aria-label="instagram link"
+          >fashion styling
+           <svg class="footer-icon" width="20" height="20">
+              <use href="./images/svg/symbol-defs.svg#instagram"></use>
+            </svg>
+          </a
         >
-  
+      </div>
+        
+ 
     </footer>
   </body>
 </html>
