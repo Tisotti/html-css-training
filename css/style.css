@@ -50,6 +50,11 @@ img {
     margin: 0;
     list-style: none;
 }
+/* 
+#5 {
+display: none;
+} */
+
 /* ----------------------------------------------------------------------- */
 /* лого */
 .logo {
@@ -162,6 +167,10 @@ img {
      color: var(--primary-text-color);
 }
 
+.nav-menu-logo {
+    fill: var(--button-secondary-color);
+}
+
 /* заголовки секций */
 .subtitle {
 
@@ -183,6 +192,21 @@ img {
     padding-bottom: 88px;
     padding-right: 40px;
 }
+
+/* [t
+
+хедер поверх страниц едет вместе со страницей,
+но нужно дать падинг на боди равный высоте шапки */
+/* .page-header {
+    position: fixed;
+    width: 100%;
+    
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    background-color: var(--background-color);
+} */
 
 /* hero */ 
 .hero-container {
@@ -286,6 +310,10 @@ padding-left: 80px;
 
     display: flex;
     align-items: center;
+}
+
+.valuation-title {
+    
 }
 
 .valuation-position {
