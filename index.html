@@ -203,8 +203,9 @@
           <div class="serv-list">
            <ul class="list servises-list">
            
-            <li class="servises-item">
-              <a href="/services.html" class="servises-link">
+            <li class="servises-item item-one">
+              <a href="" class="servises-link" data-open-modal>
+               
                 <img
                   src="./images/photo/services_1.jpg"
                   alt="purchase in paper bag"
@@ -213,6 +214,65 @@
               >
             </li>
 
+            <div class="modal-one is-hidden" data-window>
+
+            <div class="container-modal-nav">
+
+               <nav class="modal-nav">
+                <ul class="modal-main-nav">
+                  <li class="modal-nav-item"><a class="modal-nav-link" href="#">GUIDED SHOPPING</a></li>
+                  <li class="modal-nav-item"><a class="modal-nav-link" href="#">STYLE SESSION</a></li>
+                  <li class="modal-nav-item"><a class="modal-nav-link" href="#">WARDROBE EDIT</a></li>
+                  <li class="modal-nav-item"><a class="modal-nav-link" href="#">SPECIAL STYLING</a></li>
+                </ul>
+                <a class="modal-close" href="#" data-close-modal>
+                   <svg class="modal-close-icon" width="32" height="32">
+                      <use href="./images/svg/symbol-defs.svg#close"></use>
+                   </svg>
+                </a>
+  
+              </nav>
+              </div>
+               
+              <div class="modal-one-content">
+
+                 <div class="modal-video-one">
+                <video 
+                   poster="https://images.pexels.com/photos/595804/pexels-photo-595804.jpeg?w=640"
+                   width="396"
+                   height="600"
+                   controls
+                 >
+                   <source
+                     src="http://techslides.com/demos/sample-videos/small.webm"
+                     type="video/webm"
+                   />
+                   <source
+                     src="http://techslides.com/demos/sample-videos/small.mp4"
+                     type="video/mp4"
+                   />
+                   <source
+                     src="http://techslides.com/demos/sample-videos/small.ogg"
+                     type="video/ogg"
+                   />
+
+                   Your browser does not support the <code>video</code> element.
+               </video>
+              </div>
+              
+           <div class="modal-one-info">
+              <p class="modal-one-four">4h | in person</p>
+              <h2 class="modal-one-titel">When time is short but the occasion is special</h2>
+              <p class="modal-one-text">Should you face a particular style quest with no energy to deal with it singly – I’m there to support you. Whether you need: a special occasion or a red carpet look a key speaker image for a business event a preplanned vacation capsule a desired luxury item sourced and delivered for a dear one or yourself personal brand or family photoshoot styling With a custom solution to each request, I make sure you feel relaxed and taken care of at all times. Tap for details and booking.</p>
+              <a href="#5" class="hero-link button primary modal-button">BOOK NOW</a>
+              <p class="modal-one-details">+ details</p>
+              <p class="modal-one-testimonials">+ Testimonials</p>
+              <p class="modal-one-five">5h | in person</p>
+           </div>
+           
+              </div>
+        
+          </div>
 
 
             <li class="servises-item">
@@ -337,10 +397,10 @@
         <!-- форма записи -->
         <section class="request"> 
           <div class="container">
-<h2 id="5">Request</h2>
-          <!-- скрыть в css👆🏻 -->
-<img src="./images/photo/request.jpg" alt="gold earring ring in ear" width="412">
-          <a href="" class="button primary">SEND A REQUEST</a>
+            <h2 id="5">Request</h2>
+            <!-- скрыть в css👆🏻 -->
+            <img src="./images/photo/request.jpg" alt="gold earring ring in ear" width="412">
+            <a href="" class="button primary">SEND A REQUEST</a>
           </div>
           
         </section>
@@ -362,8 +422,7 @@
           
                <div class="blog-content">
                <h3 class="blog-title">
-                 sustainable & <br />
-                 mindful wardrobe
+                 sustainable & mindful wardrobe
                 </h3>
                <div class="blog-text-wrapper">
                 <p class="blog-text">
@@ -419,6 +478,32 @@
         
  
     </footer>
+
+
+    <script>
+      const refs = {
+        openModalOne: document.querySelector("[data-open-modal]"),
+        closeModalOne: document.querySelector("[data-close-modal]"),
+        modalWindow: document.querySelector("[data-window]"),
+      };
+
+      refs.openModalOne.addEventListener("click", toggleModal);
+      refs.closeModalOne.addEventListener("click", toggleModal);
+
+      function toggleModal() {
+        refs.modalWindow.classList.toggle("is-hidden");
+      } 
+       </script>
+     
+      <!-- <script>
+        
+document.querySelector('data-open-modal').addEventListener('click', function() {
+    // Кастомная обработка здесь
+    return false;
+});
+      </script> -->
+    
+
   </body>
 </html>
 

@@ -311,10 +311,10 @@ padding-left: 80px;
     display: flex;
     align-items: center;
 }
-
+/* 
 .valuation-title {
     
-}
+} */
 
 .valuation-position {
     position: relative;
@@ -452,9 +452,127 @@ margin-bottom: 80px;
 .servises-item:last-child {
     margin-right: 0;
 }
+/* ------------------------------------------------------------ */
+.modal-one *{
+    outline: 1px solid tomato;
+}
 
+.modal-one.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+.container-modal-nav{
+    width: 1460px;
+    padding-right: 80px;
+    padding-bottom: 26px;
+    padding-left: 80px;
+}
+.modal-one {
+    position: fixed;
+    top: 0;
+    left: 0;
 
+    padding: 80px;
 
+    width: 100%;
+    height: 100%;
+
+    background-color: var(--background-color);
+}
+
+.modal-nav {
+    display: flex;
+
+   
+}
+.modal-main-nav{
+  display: flex;
+
+  align-items: center;
+  gap: 40px;
+/* justify-content: space-between; */
+  list-style: none;
+}
+
+.modal-nav-link {
+    text-decoration: none;
+
+    color: var(--second-text-color);
+}
+
+.modal-nav-link:hover, .modal-nav-link:focus {
+    color: var(--title-text-color)
+}
+
+.modal-close {
+    margin-left: auto;
+}
+
+.modal-one-content {
+    display: flex;
+
+    width: 1460px;
+}
+
+.modal-video-one{
+    padding-top: 40px;
+    padding-bottom: 9px;
+    margin-right: 255px;
+}
+
+.modal-one-info {
+   
+    width: 627px;
+
+    padding-top: 80px;
+    padding-bottom: 80px;
+}
+
+.modal-one-four {
+    margin-top: 0;
+    margin-bottom: 24px;
+
+    color: var(--second-text-color);
+    text-transform: uppercase;
+}
+
+.modal-one-titel {
+    margin-top: 0;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+}
+
+.modal-one-text {
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.modal-button {
+    margin-bottom: 40px;
+}
+
+.modal-one-details {
+    margin-top: 0;
+    margin-bottom: 16px;
+
+    text-transform: uppercase;
+}
+
+.modal-one-testimonials {
+    margin-top: 0;
+        margin-bottom: 40px;
+    
+        text-transform: uppercase;
+}
+
+.modal-one-five {
+    margin-top: 0;
+        margin-bottom: 24px;
+    
+        color: var(--second-text-color);
+        text-transform: uppercase;
+}
+/* ------------------------------------------------------------------- */
 
 
 /* reviews */
@@ -522,16 +640,19 @@ margin-bottom: 80px;
 
 /* blog */
 .container-blog * {
+
     outline: 1px solid tomato;
 }
 
 .container-blog {
     padding-top: 85px;
     padding-left: 0;
+    padding-right: 10px;
 }
 
 .blog-wrapper {
     display: flex;
+    justify-content: space-between;
 }
 .subtitle-blog {
     margin-left: 80px;
@@ -543,9 +664,13 @@ margin-bottom: 80px;
     display: flex;
     flex-wrap: wrap;
 
-    margin-right: 80px;
+    /* margin-right: 80px; */
 
     width: 630px;
+}
+
+.blog-item {
+    text-align: end;
 }
 
 .blog-content {
