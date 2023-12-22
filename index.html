@@ -203,18 +203,17 @@
           <div class="serv-list">
            <ul class="list servises-list">
            
-            <li class="servises-item item-one">
-              <a href="" class="servises-link" data-open-modal>
-               
+            <li class="servises-item item-one " >
+              <a href="" class="servises-link js-open-modal" data-modal="1">
                 <img
                   src="./images/photo/services_1.jpg"
                   alt="purchase in paper bag"
                   width="197"
-                />Guided Shopping</a
-              >
+                />Guided Shopping
+              </a>
             </li>
 
-            <div class="modal-one is-hidden" data-window>
+            <div class="modal modal-one is-hidden" data-modal="1">
 
             <div class="container-modal-nav">
 
@@ -225,11 +224,10 @@
                   <li class="modal-nav-item"><a class="modal-nav-link" href="#">WARDROBE EDIT</a></li>
                   <li class="modal-nav-item"><a class="modal-nav-link" href="#">SPECIAL STYLING</a></li>
                 </ul>
-                <a class="modal-close" href="#" data-close-modal>
-                   <svg class="modal-close-icon" width="32" height="32">
+
+                   <svg class="modal-close-icon js-modal-close" width="32" height="32">
                       <use href="./images/svg/symbol-defs.svg#close"></use>
-                   </svg>
-                </a>
+                   </svg>       
   
               </nav>
               </div>
@@ -276,7 +274,7 @@
 
 
             <li class="servises-item">
-              <a href="/services.html" class="servises-link">
+              <a href="#" class="js-open-modal servises-link" data-modal="2">
                 <img
                   src="./images/photo/services_2.jpg"
                   alt="photo of Edna Shindinde"
@@ -479,12 +477,24 @@
  
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+  crossorigin="anonymous">
 
+      $('.js-open-modal').click(function(event) {
+        event.preventDefault();
+        var modalName = $(this).attr('data-modal');
+        
+        console.log(modalName)
+      }); 
+    </script>
+
+<!-- 
     <script>
       const refs = {
-        openModalOne: document.querySelector("[data-open-modal]"),
-        closeModalOne: document.querySelector("[data-close-modal]"),
-        modalWindow: document.querySelector("[data-window]"),
+        openModalOne: document.querySelector("[js-open-modal]"),
+        closeModalOne: document.querySelector("[js-modal-close]"),
+        modalWindow: document.querySelector("[modal]"),
       };
 
       refs.openModalOne.addEventListener("click", toggleModal);
@@ -493,7 +503,7 @@
       function toggleModal() {
         refs.modalWindow.classList.toggle("is-hidden");
       } 
-       </script>
+       </script> -->
      
       <!-- <script>
         

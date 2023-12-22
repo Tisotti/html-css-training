@@ -55,6 +55,7 @@ img {
 display: none;
 } */
 
+
 /* ----------------------------------------------------------------------- */
 /* лого */
 .logo {
@@ -417,7 +418,7 @@ padding-left: 80px;
 margin-bottom: 80px;
 }
 
-.servises-link {
+.servises-link{
     color: var(--button-secondary-color);
 
     line-height: 1.7;
@@ -457,7 +458,12 @@ margin-bottom: 80px;
     outline: 1px solid tomato;
 }
 
-.modal-one.is-hidden {
+/* подсветка текущей страницы в модалке */
+.current {
+    color: var(--title-text-color);
+}
+
+.modal.is-hidden {
     opacity: 0;
     pointer-events: none;
 }
@@ -483,6 +489,7 @@ margin-bottom: 80px;
 .modal-nav {
     display: flex;
 
+    position: relative;
    
 }
 .modal-main-nav{
@@ -571,6 +578,18 @@ margin-bottom: 80px;
     
         color: var(--second-text-color);
         text-transform: uppercase;
+}
+
+.modal-close-icon {
+    position: absolute;
+
+    top: 0px;
+    right: 0px;
+
+    width: 32px;
+    height: 32px;
+
+    cursor: pointer ;
 }
 /* ------------------------------------------------------------------- */
 
