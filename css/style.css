@@ -2,10 +2,10 @@
   /* Helvetica Neue, 400 regular
    Helvetica Neue, medium 500 */
 
-   /* занятие 3 веб5 48 мин реп👇🏼 */
+   /* занятие 3 веб5  мин реп👇🏼 */
 html {
     box-sizing: border-box;
-}
+}css/style.css
 
 *, *::before, *::after {
     box-sizing: inherit;
@@ -85,7 +85,8 @@ display: none;
 
     padding: 16px 72px;
 
-    min-width: 197px;
+    /* min-width: 197px; */
+    max-width: 197px;
 
     align-items: center;
 }
@@ -161,11 +162,19 @@ display: none;
     font-size: 15px;
     letter-spacing: 0.24px;
     text-decoration: none;
+
+    border-bottom: 1px solid var(--background-color);
+
+    transition: border-bottom 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 .site-nav-link:hover,
 .site-nav-link:focus {
-     color: var(--primary-text-color);
+    color: var(--primary-text-color);
+
+    border-bottom: 1px solid var(--primary-text-color);
+
+
 }
 
 .nav-menu-logo {
@@ -653,6 +662,52 @@ margin-bottom: 80px;
         margin-bottom: 0;
      
 }
+
+
+/* request */
+.container-reqest {
+    display: flex;
+
+    padding-left: 80px;
+    padding-right: 80px;
+}
+.request-photo {
+    margin-right: 102px;
+}
+
+.request-form {
+  margin-top: 113px;
+  margin-bottom: 113px;
+}
+
+.request-text {
+    margin-bottom: 24px;
+}
+
+.request-speaker-form{
+    margin-bottom: 24px;
+}
+
+.request-mail {
+    margin-bottom: 24px;
+}
+
+.reques-social-group {
+    justify-content: center;
+}
+
+/* .request-social {
+    
+} */
+
+.request-icon {
+    margin-right: 16px;
+    margin-right: 110px;
+    margin-left: 0;
+}
+
+
+
 
 
 
